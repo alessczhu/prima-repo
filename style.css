@@ -1,0 +1,306 @@
+@import url('responsive_xs.css') (min-width: 270px) and (max-width: 767px);
+@import url('responsive_sm.css') (min-width: 768px) and (max-width: 991px);
+@import url('responsive_md.css') (min-width: 992px);
+
+/* General
+----------------------------------------------------------------------------- */
+body {
+  /* background: #fff url("../images/dot-back.gif") repeat; */
+  font-family: "Roboto", Helvetica, Arial, sans-serif; 
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #333333;
+}
+
+
+a {
+  color: #F44336;
+  text-decoration: none;
+}
+a:hover,
+a:focus {
+  color: #F44336;
+  text-decoration: none;
+}
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+h1 {
+    font-size: 24px;
+ }
+
+h2 {
+font-size: 25px;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+
+.h1 
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: sans-serif;
+  font-weight: 200;
+  line-height: 1.1;
+  color: #000000;
+}
+
+/* Menu
+----------------------------------------------------------------------------- */
+.navbar, .navbar-default {
+  font-size: 13px;
+  background-color: #fff;
+  margin-bottom: 0;
+}
+.navbar.container, .navbar.container-fluid {
+  margin-top: 0;
+}
+.navbar-default .navbar-nav {
+  float: right;
+}
+.navbar-default .navbar-nav > li > a {
+  border-bottom: 4px solid #fff;
+  -webkit-transition: border 0.2s ease-in-out;
+       -o-transition: border 0.2s ease-in-out;
+          transition: border 0.2s ease-in-out;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  border-bottom: 2px solid #F7412D;
+}
+.logo.navbar-btn {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.nav > li > a {
+  padding-left: 10px;
+}
+.navbar-nav > li > a {
+  padding-top: 27px;
+  padding-bottom: 0;
+}
+
+.navbar {
+  border: none;
+  box-shadow: none;
+}
+
+.dropdown-menu > li > a {
+    display: block;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.846;
+    color: #666666;
+    white-space: nowrap;
+    font-size: 13px;
+}
+
+/* Breadcrumb
+----------------------------------------------------------------------------- */
+.breadcrumb {
+  padding: 8px 0px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  background-color: transparent;
+  font-size:12px;
+}
+
+/* Language switcher
+----------------------------------------------------------------------------- */
+#block-locale-language ul {
+  list-style: none;
+  padding-top: 10px;
+  margin-bottom: 0;
+}
+#block-locale-language ul li {
+  padding-left: 15px;
+  display: inline-block;
+}
+
+
+/* header
+----------------------------------------------------------------------------- */
+
+.page-header {
+    padding-bottom: 10.5px;
+    margin: 46px 0 23px;
+    border-bottom: 1px dashed black;
+    color: #F7412D;
+    font-weight: 400;
+}
+
+
+
+/* Fields
+----------------------------------------------------------------------------- */
+.field-name-field-subtitle {
+  font-size: 20px;
+  font-weight: medium;
+  color: #F44336;
+  line-height: 1.556;
+}
+.field-name-field-subimage {
+  font-size: 18;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+
+/* Views News Aldes, News Spam, Collaborazioni
+----------------------------------------------------------------------------- */
+.view .grid-element {
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+.view .grid-element h6.title {
+  font-size: 18px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #c71937;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  transition: border 0.2s ease-in-out;
+}
+.view .grid-element h6.title a {
+  color: #F44336;
+  font-weight: 400;
+}
+/*
+.view .grid-element h6.title:hover {
+  border-bottom: 2px solid #000;
+*/
+
+}
+.view .grid-element h6.title a:hover {
+  text-decoration: none;
+}
+.view .grid-element .subtitle {
+  font-size: 14px;
+  margin-bottom: 5px;
+  min-height: 45px;
+}
+.view .grid-element .subimage {
+  font-size: 16px;
+  margin-top: 10px;
+  /* min-height: 50px; */
+}
+
+
+#draggableviews-table-news-order-aldes tbody tr:nth-child(8),
+#draggableviews-table-news-order-spam tbody tr:nth-child(8) {
+  border-bottom: 2px solid #888;
+}
+#draggableviews-table-news-order-aldes tbody tr:nth-child(-n+8),
+#draggableviews-table-news-order-spam tbody tr:nth-child(-n+8) {
+  background-color: #eee;
+}
+.view-header {
+  margin-bottom: 15px;
+}
+
+.pager-show-more li > a {
+ padding: 5px;
+ background-color: transparent;
+ border: none;
+ border-radius: 0;
+}
+
+.pager-show-more li > a:hover {
+ background-color: transparent;
+}
+
+/* View Slide news
+----------------------------------------------------------------------------- */
+#fs_news.flexslider {
+  border: none;
+  margin-bottom: 15px;
+}
+#fs_news .flex-caption {
+  position: absolute;
+  width: inherit;
+}
+#fs_news .flex-caption .title a {
+  color: #F44336;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+#fs_news .flex-caption .subtitle,
+#fs_news .flex-caption .copyright {
+  color: #fff;
+}
+#fs_news .flex-caption .subtitle {
+  font-size: 1.3em;
+}
+#fs_news .flex-caption .copyright {
+  font-size: 0.8em;
+  font-style: italic;
+}
+#fs_news .flex-caption .copyright:before {
+  content: '\00A9\00a0';
+}
+.flex-direction-nav a {
+  height: 45px;
+  top: 40%;
+}
+
+/* View Spazi/Credits.
+----------------------------------------------------------------------------- */
+.view-spazi-credits .row {
+padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+/* Pagina 'Evento'.
+----------------------------------------------------------------------------- */
+.evento-col-sx .field {
+  margin-bottom: 15px;
+}
+.evento-col-dx .flex-control-thumbs {
+  margin-top: 0;
+}
+.evento-col-dx .flex-control-thumbs li {
+  width: 20%;
+  padding-top: 2%;
+  padding-right: 2%;
+}
+#edit-field-tipo,
+#edit-field-destination {
+    float: right;
+    width: 300px;
+    padding: 0 10px;
+}
+
+/* Pagine con template su due colonne:
+ * - Info-Maps (node-4)
+ * - Residenze (node-8)
+ * - Programmazioni (node-104)
+ * - Archivio formazione (node-172)
+ * - Contatti (node-6)
+ * - Donazioni (node-173).
+----------------------------------------------------------------------------- */
+#node-4, #node-6, #node-8, #node-104, #node-172, #node-173 {
+  margin-bottom: 20px;
+}
+.residenze-col-dx img,
+#node-4 .field-name-field-image img,
+#node-6 .field-name-field-image img,
+#node-8 .field-name-field-image img,
+#node-104 .field-name-field-image img,
+#node-172 .field-name-field-image img,
+#node-173 .field-name-field-image img {
+  width: 100%;
+}
